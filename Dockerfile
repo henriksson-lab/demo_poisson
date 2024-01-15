@@ -4,7 +4,7 @@ FROM rocker/shiny:latest
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git libxml2-dev libmagick++-dev && libsqlite3-dev && \
+    apt-get install -y git libxml2-dev libmagick++-dev libsqlite3-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
